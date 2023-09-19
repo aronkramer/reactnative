@@ -2,8 +2,8 @@
   "expo": {
     "name": "clean notes",
     "slug": "clean-notes",
-    "description": "clean notes is easy to use",
-    "version": "1.0.0",
+    "description": "clean notes are easy to use",
+    "version": "1.0.1",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -16,9 +16,12 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.cleannotes.android"
     },
     "android": {
+      "package": "com.cleannotes.android",
+      "versionCode": 1,
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
@@ -26,6 +29,11 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "c9c192ce-3ddd-4ed8-bf7d-7a45ddb99f0d"
+      }
     }
   }
 }
